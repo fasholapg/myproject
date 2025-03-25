@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Dashboard</title>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Charts -->
+<style>
+    body{
+        font-family: "Manrope", sans-serif;
+
+    }
+</style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Bob 🐛 cat</h2>
+        </div>
+        <ul class="menu">
+            <li class="active"><span>🏠</span> Dashboard</li>
+            <li><a href="work.html"><span>👥</span> Workers</a></li>
+            <li><a href="att.html">📅 Attendance</a></li>
+            <li><a href="pay.html"><span>💰</span> Payments</a></li>
+            <li><a href="reports.html"><span>📊</span> Reports</a></li></a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Dashboard Overview</h1>
+            <div class="profile">
+                <span>🔔</span>
+                <img src="/man.jpeg" alt="User">
+                <div class="user-info">
+                    <h4>John Smith</h4>
+                    <p>Administrator</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dashboard Summary Cards -->
+        <div class="cards">
+            <div class="card">
+                <h3>Total Workers</h3>
+                <p>156</p>
+            </div>
+            <div class="card">
+                <h3>Present Today</h3>
+                <p>142 ✅</p>
+            </div>
+            <div class="card">
+                <h3>Absent Today</h3>
+                <p>14 ❌</p>
+            </div>
+            <div class="card">
+                <h3>Late Arrivals</h3>
+                <p>8 ⏳</p>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts">
+            <div class="chart">
+                <h3>Attendance Overview</h3>
+                <canvas id="attendanceChart"></canvas>
+            </div>
+            <div class="chart">
+                <h3>Payment Statistics</h3>
+                <canvas id="paymentChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Recent Activities -->
+        <div class="activities">
+            <h3>Recent Activities</h3>
+            <ul>
+                <li>
+                    <img src="images/lamu.jpeg" alt="User">
+                    <div>
+                        <h4>Sarah Johnson clocked in</h4>
+                        <p>Today at 8:00 AM</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/user2.jpg" alt="User">
+                    <div>
+                        <h4>Michael Chen reported equipment malfunction</h4>
+                        <p>Today at 9:15 AM</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/user3.jpg" alt="User">
+                    <div>
+                        <h4>David Wilson completed overtime shift</h4>
+                        <p>Yesterday at 6:30 PM</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="dash.js"></script>
+</body>
+</html>

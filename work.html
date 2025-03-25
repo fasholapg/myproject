@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workers Management</title>
+    <link rel="stylesheet" href="work.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Bob 🐛 cat</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="dash.html">🏠 Dashboard</a></li>
+            <li class="active"><a href="workers.html">👥 Workers</a></li>
+            <li><a href="att.html">📅 Attendance</a></li>
+            <li><a href="pay.html">💰 Payments</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Workers Management</h1>
+            <div class="profile">
+                <span>🔔</span>
+                <img src="images/profile.jpg" alt="User">
+                <div class="user-info">
+                    <h4>John Smith</h4>
+                    <p>Administrator</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Workers Section -->
+        <div class="workers-container">
+            <div class="workers-header">
+                <button class="active-tab">All Workers</button>
+                <button id="addWorkerBtn">Add New Worker</button>
+            </div>
+
+            <div class="workers-list">
+                <div class="worker">
+                    <img src="images/user1.jpg" alt="Sarah">
+                    <div>
+                        <h4>Sarah Johnson</h4>
+                        <p>sarahj@example.com</p>
+                    </div>
+                </div>
+                <div class="worker">
+                    <img src="images/user2.jpg" alt="Michael">
+                    <div>
+                        <h4>Michael Chen</h4>
+                        <p>michael.c@example.com</p>
+                    </div>
+                </div>
+                <div class="worker">
+                    <img src="images/user3.jpg" alt="David">
+                    <div>
+                        <h4>David Wilson</h4>
+                        <p>david.w@example.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="prev">Previous</button>
+                <button class="page active">1</button>
+                <button class="page">2</button>
+                <button class="page">3</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="work.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Dashboard</title>
+    <link rel="stylesheet" href="att.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Bob 🐛 cat</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="dash.html">🏠 Dashboard</a></li>
+            <li><a href="work.html">👥 Workers</a></li>
+            <li class="active"><a href="att.html">📅 Attendance</a></li>
+            <li><a href="pay.html">💰 Payments</a></li>
+            <li><a href="reports.html">📊 Reports</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Attendance Management</h1>
+            <div class="profile">
+                <span>🔔</span>
+                <img src="images/profile.jpg" alt="User">
+                <div class="user-info">
+                    <h4>John Smith</h4>
+                    <p>Administrator</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Attendance Overview -->
+        <div class="attendance-overview">
+            <div class="summary">
+                <h2>Today</h2>
+                <p>145</p>
+            </div>
+            <div class="summary">
+                <h2>Time</h2>
+                <p>138</p>
+            </div>
+            <div class="summary warning">
+                <h2>Late</h2>
+                <p>7</p>
+            </div>
+            <div class="summary danger">
+                <h2>Absent</h2>
+                <p>11</p>
+            </div>
+        </div>
+
+        <!-- Attendance Log -->
+        <div class="attendance-log">
+            <h2>Today's Attendance Log</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Employee</th>
+                        <th>Clock In</th>
+                        <th>Clock Out</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceTable">
+                    <tr>
+                        <td><img src="images/user1.jpg" alt="Sarah"> Sarah Johnson</td>
+                        <td>08:02 AM</td>
+                        <td>05:00 PM</td>
+                        <td class="status on-time">On Time</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/user2.jpg" alt="Michael"> Michael Chen</td>
+                        <td>09:15 AM</td>
+                        <td>-</td>
+                        <td class="status late">Late</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Monthly Overview -->
+        <div class="monthly-overview">
+            <h2>Monthly Overview</h2>
+            <div class="overview-box">
+                <p>Average Attendance Rate</p>
+                <h3>93%</h3>
+            </div>
+            <div class="overview-box">
+                <p>Late Instances</p>
+                <h3>24</h3>
+            </div>
+            <div class="overview-box">
+                <p>Perfect Attendance</p>
+                <h3>65%</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="att.js"></script>
+</body>
+</html>

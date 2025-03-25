@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports Dashboard</title>
+    <link rel="stylesheet" href="reports.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>Bob 🐛 cat</h2>
+        </div>
+        <ul class="menu">
+            <li><a href="dash.html">🏠 Dashboard</a></li>
+            <li><a href="work.html">👥 Workers</a></li>
+            <li><a href="att.html">📅 Attendance</a></li>
+            <li><a href="pay.html">💰 Payments</a></li>
+            <li class="active"><a href="reports.html">📊 Reports</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Reports</h1>
+            <div class="profile">
+                <span>🔔</span>
+                <img src="images/profile.jpg" alt="User">
+                <div class="user-info">
+                    <h4>John Smith</h4>
+                    <p>Administrator</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Monthly Reports Overview -->
+        <div class="reports-overview">
+            <h2>Monthly Reports Overview</h2>
+            <canvas id="reportsChart"></canvas>
+        </div>
+
+        <!-- Key Performance Indicators -->
+        <div class="key-performance">
+            <h2>Key Performance Indicators</h2>
+            <div class="kpi">
+                <div class="kpi-box">
+                    <p>Productivity Rate</p>
+                    <h3>92%</h3>
+                </div>
+                <div class="kpi-box">
+                    <p>Quality Score</p>
+                    <h3>95%</h3>
+                </div>
+                <div class="kpi-box">
+                    <p>Safety Index</p>
+                    <h3>98%</h3>
+                </div>
+                <div class="kpi-box">
+                    <p>Cost Efficiency</p>
+                    <h3>87%</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Reports -->
+        <div class="recent-reports">
+            <h2>Recent Reports</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Report Name</th>
+                        <th>Generated Date</th>
+                        <th>Department</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="reportsTable">
+                    <tr>
+                        <td><strong>Production Analysis</strong></td>
+                        <td>2024-02-01</td>
+                        <td>Manufacturing</td>
+                        <td class="status completed">Completed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Quality Inspection</strong></td>
+                        <td>2024-01-30</td>
+                        <td>Quality Control</td>
+                        <td class="status pending">Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Report Categories -->
+        <div class="report-categories">
+            <h2>Report Categories</h2>
+            <div class="categories">
+                <div class="category-box">📈 Production Reports</div>
+                <div class="category-box">🔍 Quality Reports</div>
+                <div class="category-box">⚠ Safety Reports</div>
+                <div class="category-box">🛠 Maintenance Reports</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="reports.js"></script>
+</body>
+</html>
